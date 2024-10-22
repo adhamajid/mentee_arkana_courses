@@ -6,15 +6,20 @@
     # 'nama_modul',
     'base',
     'contacts',
-    'hr'
+    'hr',
+    'mail',
+    'stock',
+    'product',
+
   ],
   'data': [
     # 'views/nama_file.xml',
-    # 'security/ir.model.access.csv',
+    'security/ir.model.access.csv',
     'data/partner_data.xml',
-    'views/mentor_student_views.xml',
-    'views/mentee_student_views.xml',
-    'views/mentee_menus.xml',
+    'views/course_mentor_view.xml',
+    'views/course_student_view.xml',
+    'views/course_subject_view.xml',
+    'views/course_menus.xml',
 
     
 

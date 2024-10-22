@@ -2,20 +2,6 @@
 <odoo>
     <data>
 
-    <!-- Action View -->
-        <record id="mentee_student_action" model="ir.actions.act_window">
-            <field name="name">Mentee</field>
-            <field name="res_model">res.partner</field>
-            <field name="view_mode">tree,form,kanban</field>
-            <field name="view_id" ref="mentee_view_tree"/>
-            <field name="context">{
-                'default_is_mentee': True,
-                'search_default_order': 'registration_number asc'
-                }</field>
-            <field name="domain">[('is_mentee', '=', True)]</field>
-        </record>
-
-
         <!-- Form View -->
         <record id="view_res_partner_form_inherit" model="ir.ui.view">
             <field name="name">res.partner.form.inherit</field>
@@ -80,6 +66,19 @@
                     <field name="phone"/>
                 </tree>   
             </field>
+        </record>
+
+            <!-- Action View -->
+        <record id="mentee_student_action" model="ir.actions.act_window">
+            <field name="name">Mentee</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="view_id" ref="mentee_view_tree"/>
+            <field name="context">{
+                'default_is_mentee': True,
+                'search_default_order': 'registration_number asc'
+                }</field>
+            <field name="domain">[('is_mentee', '=', True)]</field>
         </record>
 
     </data>
