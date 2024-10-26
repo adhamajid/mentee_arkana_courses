@@ -9,6 +9,9 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
 
+            <!-- penulisan boolean nya juga bisa ditulis dgn seperti ini:
+            invisible='is_mentee' -->
+
                 <xpath expr="//sheet" position="before">
                     <header>
                         <button name="mark_as_student"

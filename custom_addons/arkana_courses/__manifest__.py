@@ -10,6 +10,7 @@
     'mail',
     'stock',
     'product',
+    'sale_management',
 
   ],
   'data': [
@@ -18,6 +19,7 @@
     'data/partner_data.xml',
     'data/sequence_mentee.xml',
     'data/sequence_booking.xml',
+    'views/sale_order_inheret_view.xml',
     'views/course_mentor_view.xml',
     'views/course_student_view.xml',
     'views/course_subject_view.xml',
@@ -25,7 +27,6 @@
     'views/course_menus.xml',
 
     
-
   ],
   'sequence': 1,
   'auto_install': False,
